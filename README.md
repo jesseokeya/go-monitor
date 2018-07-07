@@ -5,7 +5,7 @@ A simple http monitoring library that externally and concurrently monitors rest 
 
 ## Install
 ```
-go get -u github.com/jesseokeya/go-monitor
+go get -u github.com/jesseokeya/go-monitor/monitor
 ```
 ## Example
 ```go
@@ -17,7 +17,7 @@ import (
 	"os"
 	"time"
 
-	pkg "github.com/PocketLoan/pocketloan-monitoring-service/monitor"
+	pkg "github.com/jesseokeya/go-monitor/monitor"
 )
 
 func main() {
