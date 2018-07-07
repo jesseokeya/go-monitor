@@ -47,4 +47,5 @@ func main() {
 ```
 
 ## Terminal Snippet
+![alt text](https://github.com/jesseokeya/go-monitor/blob/master/images/Screen%20Shot%202018-07-07%20at%205.57.25%20AM.png?raw=true)
 
