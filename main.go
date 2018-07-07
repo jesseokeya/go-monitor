@@ -17,12 +17,12 @@ func main() {
 		},
 	}
 	// Perform Health Checks Every Hour
-	monitorHealth.Every(1*time.Second, func() {
+	monitorHealth.Every(10*time.Second, func() {
 		// Does Health Checks 20 times
 		monitorHealth.Do(20, func() {
 			response := monitorHealth.Request("GET", "")
 			expected := monitorHealth.Verify(
-				response, `{"message":"application is healthy","status":200}`)
+				response, `{"message":"application is healthy","status":20}`)
 			if expected == false {
 				message := "Health Checks Failed, Check Application Logs For More Details"
 				// Sends an email to the user letting them know thier service is down
