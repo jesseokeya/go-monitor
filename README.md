@@ -28,7 +28,7 @@ func main() {
 		},
 	}
 	// Perform Health Checks Every Hour
-	monitorHealth.Every(1*time.Second, func() {
+	monitorHealth.Every(1*time.Hour, func() {
 		// Does Health Checks 20 times
 		monitorHealth.Do(20, func() {
 			response := monitorHealth.Request("GET", "")
